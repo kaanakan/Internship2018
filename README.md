@@ -44,6 +44,5 @@ I have used two different Deep Learning models which are Convolutional Neural Ne
 |    s11   	|                   40,7                  	|                    47,9                    	|
 |    s12   	|                   44,9                  	|                    41,2                    	|
 |    s13   	|                   47,2                  	|                    48,1                    	
-|:--------:	|:---------------------------------------:	|:------------------------------------------:	|
 | AVERAGES 	|                  46,23                  	|                    48,16                   	|
 

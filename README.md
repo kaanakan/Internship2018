@@ -28,7 +28,7 @@ I have used two different Deep Learning models which are Convolutional Neural Ne
  ***
 ## Results
 
-```markdown
+
 | Subjects 	| TEST ACCURACY FOR MLP WITH AUGMENTATION 	| TEST ACCURACY FOR MLP WITHOUT AUGMENTATION 	|
 | --------	|:---------------------------------------:	|:------------------------------------------:	|
 |    s1    	|                   41,1                  	|                    43,1                    	|
@@ -46,4 +46,4 @@ I have used two different Deep Learning models which are Convolutional Neural Ne
 |    s13   	|                   47,2                  	|                    48,1                    	
 |:--------:	|:---------------------------------------:	|:------------------------------------------:	|
 | AVERAGES 	|                  46,23                  	|                    48,16                   	|
-```
+

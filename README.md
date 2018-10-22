@@ -28,6 +28,7 @@ I have used two different Deep Learning models which are Convolutional Neural Ne
  ***
 ## Results
 
+### Results of experiments with raw data
 
 | Subjects 	| TEST ACCURACY FOR MLP WITH AUGMENTATION 	| TEST ACCURACY FOR MLP WITHOUT AUGMENTATION 	|
 | --------	|:---------------------------------------:	|:------------------------------------------:	|
@@ -46,3 +47,7 @@ I have used two different Deep Learning models which are Convolutional Neural Ne
 |    s13   	|                   47,2                  	|                    48,1                    	
 | AVERAGES 	|                  46,23                  	|                    48,16                   	|
 
+
+## Extras
+I have also tried Autoencoders in order to decrease the number of features. 
+[Code for Autoencoders](/Models/Autoencoders/autoencoder_timeseries.py)

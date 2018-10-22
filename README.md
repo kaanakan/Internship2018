@@ -49,5 +49,6 @@ I have used two different Deep Learning models which are Convolutional Neural Ne
 
 
 ## Extras
-I have also tried Autoencoders in order to decrease the number of features. 
+I have also tried Autoencoders in order to decrease the number of features.
+***
 [Code for Autoencoders](/Models/Autoencoders/autoencoder_timeseries.py)

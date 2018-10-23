@@ -18,7 +18,7 @@ The dataset was originally collected for an emotional memory retrieval experimen
 ## Models
 I have used two different Deep Learning models which are Convolutional Neural Networks and Multilayer Perceptrons on raw data with using some techniques to augment the data. 
 
-In all models, I used Dropout functions and Batch Normalization layers in order to prevent the overfitting problem. Since the dataset is high-dimensional (137502 features for MLP and 48*48*48*6 dimensional 3D images for CNN) and has few samples for training (210 samples for training), models tend to overfit, and that leads to poor predictive performance for models.
+In all models, I used Dropout functions and Batch Normalization layers in order to prevent the overfitting problem. Since the dataset is high-dimensional (137502 features for MLP and 48\*48\*48\*6 dimensional 3D images for CNN) and has few samples for training (210 samples for training), models tend to overfit, and that leads to poor predictive performance for models.
 
 All the training was done on the GPU(GTX 1080 or Tesla K40c).
  ***

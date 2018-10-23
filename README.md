@@ -22,19 +22,19 @@ In all models, I used Dropout functions and Batch Normalization layers in order 
 
 All the training was done on the GPU(GTX 1080 or Tesla K40c).
  ***
-[Code for CNN model PyTorch implementation](/models/CNN/cnn_pytorch.py)
+[Code for CNN model PyTorch implementation](/../../models/CNN/cnn_pytorch.py)
  ***
-[Code for CNN model Keras implementation](/models/CNN/cnn_keras.py)
+[Code for CNN model Keras implementation]((/../../models/CNN/cnn_keras.py)
  ***
-[Code for MLP model PyTorch implementation](/models/MLP/mlp_timeseries_pytorch.py)
+[Code for MLP model PyTorch implementation]((/../../models/MLP/mlp_timeseries_pytorch.py)
  ***
-[Code for MLP model Keras implementation](/models/MLP/mlp_timeseries.py)
+[Code for MLP model Keras implementation]((/../../models/MLP/mlp_timeseries.py)
  ***
  ### Regionwise-data
  
 Also, I have done some experiments with using region-wise data which is formed by taking the average of voxels with respect to anatomic brain regions. After taking the average, the data is the dimension of 90 instead of 137502 (I used all anatomical regions defined by Anatomical Atlas Labeling (AAL)* ).
 ***
-[Code for Regionwise data MLP model PyTorch implementation](/models/Regionwise/regionwise_mlp.py)
+[Code for Regionwise data MLP model PyTorch implementation]((/../../models/Regionwise/regionwise_mlp.py)
 ***
 *[Automated anatomical labeling of activations in SPM using a macroscopic anatomical parcellation of the MNI MRI single-subject brain](https://www.ncbi.nlm.nih.gov/pubmed/11771995)
 ## Results
@@ -61,7 +61,7 @@ Also, I have done some experiments with using region-wise data which is formed b
 
 ## Extras
 I have also tried Autoencoders in order to decrease the number of features. 
-[Code for Autoencoders](/Models/Autoencoders/autoencoder_timeseries.py)
+[Code for Autoencoders]((/../../Models/Autoencoders/autoencoder_timeseries.py)
 
 ## References
 * [Decoding cognitive states using the bag of words model on fMRI time series](https://ieeexplore.ieee.org/abstract/document/7496222)

@@ -66,3 +66,4 @@ I have also tried Autoencoders in order to decrease the number of features.
 ## References
 * [Decoding cognitive states using the bag of words model on fMRI time series](https://ieeexplore.ieee.org/abstract/document/7496222)
 * [Relationship between emotion and forgetting.](http://psycnet.apa.org/record/2015-45624-001)
+* [Automated anatomical labeling of activations in SPM using a macroscopic anatomical parcellation of the MNI MRI single-subject brain](https://www.ncbi.nlm.nih.gov/pubmed/11771995)

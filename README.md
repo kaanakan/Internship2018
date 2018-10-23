@@ -13,10 +13,14 @@ The main dataset we used in this work is a neuroimage (or image) dataset collect
 
 The dataset was originally collected for an emotional memory retrieval experiment* where the stimuli consisted of two neutral (kitchen utensils and furniture) and two emotional (fear and disgust) categories of images. Each trial started with a 12-second fixation period followed by a 6-second encoding period. In the encoding period, participants were presented with 5 images from the same category, each image lasting 1200 milliseconds on the screen. Following the fifth image, a 12-second delay period was presented in which participants solved three math problems consisting of addition or subtraction of two randomly selected two-digit numbers. Following the third math problem, a 2-second retrieval period started in which participants were presented with a test image from the same category and indicated whether the image was a member of the current study list or not. The reader is referred to paper* for further details. For neuroimage classification, we employed measurements obtained during the encoding and retrieval phases as our training and testing data, respectively.
 
-*[link to paper](http://psycnet.apa.org/record/2015-45624-001)
+*[Relationship between emotion and forgetting.](http://psycnet.apa.org/record/2015-45624-001)
 
 ## Models
-I have used two different Deep Learning models which are Convolutional Neural Networks and Multilayer Perceptrons with using some techniques to augment the data. 
+I have used two different Deep Learning models which are Convolutional Neural Networks and Multilayer Perceptrons on raw data with using some techniques to augment the data. 
+
+In all models, I used Dropout functions and Batch Normalization layers in order to prevent the overfitting problem. Since the dataset is high-dimensional (137502 features for MLP and 48*48*48*6 dimensional 3D images for CNN) and has few samples for training (210 samples for training), models tend to overfit, and that leads to poor predictive performance for models.
+
+All the training was done on the GPU(GTX 1080 or Tesla K40c).
  ***
 [Code for CNN model PyTorch implementation](/models/CNN/cnn_pytorch.py)
  ***
@@ -26,6 +30,13 @@ I have used two different Deep Learning models which are Convolutional Neural Ne
  ***
 [Code for MLP model Keras implementation](/models/MLP/mlp_timeseries.py)
  ***
+ ### Regionwise-data
+ 
+Also, I have done some experiments with using region-wise data which is formed by taking the average of voxels with respect to anatomic brain regions. After taking the average, the data is the dimension of 90 instead of 137502 (I used all anatomical regions defined by Anatomical Atlas Labeling (AAL)* ).
+***
+[Code for Regionwise data MLP model PyTorch implementation](/models/Regionwise/regionwise_mlp.py)
+***
+*[Automated anatomical labeling of activations in SPM using a macroscopic anatomical parcellation of the MNI MRI single-subject brain](https://www.ncbi.nlm.nih.gov/pubmed/11771995)
 ## Results
 
 ### Results of experiments with raw data
@@ -53,5 +64,5 @@ I have also tried Autoencoders in order to decrease the number of features.
 [Code for Autoencoders](/Models/Autoencoders/autoencoder_timeseries.py)
 
 ## References
-[Decoding cognitive states using the bag of words model on fMRI time series](https://ieeexplore.ieee.org/abstract/document/7496222)
-[Relationship between emotion and forgetting.](http://psycnet.apa.org/record/2015-45624-001)
+* [Decoding cognitive states using the bag of words model on fMRI time series](https://ieeexplore.ieee.org/abstract/document/7496222)
+* [Relationship between emotion and forgetting.](http://psycnet.apa.org/record/2015-45624-001)

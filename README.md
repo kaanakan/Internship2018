@@ -22,13 +22,13 @@ In all models, I used Dropout functions and Batch Normalization layers in order 
 
 All the training was done on the GPU(GTX 1080 or Tesla K40c).
  ***
-[Code for CNN model PyTorch implementation](/../../models/CNN/cnn_pytorch.py)
+[Code for CNN model PyTorch implementation](/../blob/master/models/CNN/cnn_pytorch.py)
  ***
-[Code for CNN model Keras implementation]((/../../models/CNN/cnn_keras.py)
+[Code for CNN model Keras implementation](/../../models/CNN/cnn_keras.py)
  ***
-[Code for MLP model PyTorch implementation]((/../../models/MLP/mlp_timeseries_pytorch.py)
+[Code for MLP model PyTorch implementation](/../../models/MLP/mlp_timeseries_pytorch.py)
  ***
-[Code for MLP model Keras implementation]((/../../models/MLP/mlp_timeseries.py)
+[Code for MLP model Keras implementation](/../../models/MLP/mlp_timeseries.py)
  ***
  ### Regionwise-data
  

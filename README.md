@@ -41,7 +41,7 @@ Also, I have done some experiments with using region-wise data which is formed b
 
 ### Results of experiments with raw data
 
-| Subjects 	| TEST ACCURACY FOR MLP WITH AUGMENTATION 	| TEST ACCURACY FOR MLP WITHOUT AUGMENTATION 	|
+| Subjects 	| TEST ACCURACY FOR MLP WITHOUT AUGMENTATION 	| TEST ACCURACY FOR MLP WITH AUGMENTATION 	|
 | --------	|:---------------------------------------:	|:------------------------------------------:	|
 |    s1    	|                   41,1                  	|                    43,1                    	|
 |    s2    	|                   46,1                  	|                    50,2                    	|
